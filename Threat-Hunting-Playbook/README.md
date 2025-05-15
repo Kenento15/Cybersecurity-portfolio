@@ -60,3 +60,16 @@ Graphical display to identify spikes and attack patterns quickly.
 - ✅ Splunk Query Building
 - ✅ Threat Detection via Pattern Recognition
 - ✅ Data Visualization & Log Interpretation
+
+## SPL Commands Used
+
+```spl
+index=* source="apache.access.log" "/login"
+| rex field=_raw "(?<client_ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"
+| stats count by client_ip
+| sort - count
+
+index=* source="apache.access.log" "/login"
+| rex field=_raw "(?<client_ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"
+| timechart count by client_ip
+
