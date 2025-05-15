@@ -52,7 +52,7 @@ Created a detection and response plan for suspicious insider behavior.
 
 8. **SOC Playbook**  
 Developed a structured SOC playbook covering triage, escalation, and documentation workflows.  
-🔗 [View project folder](./SOC-Playbook)
+🔗 [View project folder](SOC-Playbook)
 
 
 
