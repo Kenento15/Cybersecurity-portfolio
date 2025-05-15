@@ -19,12 +19,9 @@ This playbook outlines a structured approach to proactively detect advanced thre
   - Cross-reference with known malicious IPs and domains (IOC feed).
   - Review PowerShell or script execution via Sysmon logs.
 
-## Sample Query (Splunk)
-```spl
-index=sysmon EventCode=3 (destination_port!=443 AND destination_port!=80)
-| stats count by dest_ip, dest_port, process_name, user
-
 ## Outcome
 - Detected potential beaconing to suspicious IPs.
 - Escalated case to Incident Response team.
 - Recommendation: Block IPs, isolate host, perform memory analysis.
+
+
