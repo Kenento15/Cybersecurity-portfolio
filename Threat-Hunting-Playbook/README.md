@@ -22,21 +22,21 @@ Identify abnormal login behavior by extracting IP addresses hitting the `/login`
 ### 1. IP Address Frequency Count
 Shows the number of times each IP attempted to access the `/login` page.
 
-![IP Frequency Count](./ASP1.jpg)
+![IP Frequency Count](./ASP1.png)
 
 ---
 
 ### 2. Timechart of Login Attempts
 Displays when each login attempt occurred, grouped by IP.
 
-![Timechart of Attempts](./ASP2.jpg)
+![Timechart of Attempts](./ASP2.png)
 
 ---
 
 ### 3. Column Chart Visualization
 Graphical display to identify spikes and attack patterns quickly.
 
-![Column Chart](./ASP3.jpg)
+![Column Chart](./ASP3.png)
 
 ---
 
