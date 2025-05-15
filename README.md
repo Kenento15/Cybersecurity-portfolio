@@ -42,6 +42,13 @@
 *Configured LAN firewall rules to block social media and control traffic.*
 - 🔗 [View project folder](./pfSense-Lab)
 
----
+6. DLP Policy Demo  
+Simulated a Data Loss Prevention policy to prevent unauthorized sharing of confidential information.  
+🔗 [View project folder](./DLP-Policy-Demo)
+
+7. Insider Threat Simulation  
+Created a detection plan for insider threat behavior using audit log analysis and endpoint monitoring.  
+🔗 [View project folder](./Insider-Threat-Simulation)
+
 
 📌 *More projects will be added soon as I continue building this repository.*
