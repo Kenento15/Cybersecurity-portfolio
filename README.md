@@ -16,7 +16,7 @@
 
 ## 🔗 Connect with Me
 - [LinkedIn](https://www.linkedin.com/in/kenechukwu-okeke/)
-- 📄 [View My Resume](#) *(https://drive.google.com/file/d/1o814PKWRg998w0jwieiLsPX6YUeo778N/view?usp=sharing)*
+- 📄 [View My Resume] (https://drive.google.com/file/d/1o814PKWRg998w0jwieiLsPX6YUeo778N/view?usp=sharing)
 
 ---
 
