@@ -17,16 +17,6 @@ Identify abnormal login behavior by extracting IP addresses hitting the `/login`
 
 ---
 
-## SPL Commands Used
-
-```spl
-index=* source="apache.access.log" "/login"
-| rex field=_raw "(?<client_ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"
-| stats count by client_ip
-| sort - count
-
----
-
 ## Visual Evidence
 
 ### 1. IP Address Frequency Count
