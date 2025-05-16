@@ -1,10 +1,27 @@
-# SIEM Use Case Development
+## Simulated Detection Rule: Brute Force Login Attempt - Apache
 
-This project showcases how I created and tuned SIEM detection rules in Splunk based on MITRE ATT&CK techniques. Use cases include:
+**Rule Logic:**  
+- **Condition**: IP with more than 5 failed login attempts in under 1 minute  
+- **Fields Monitored**: `client_ip`, `user`, `_time`
+Visual Output:
 
-- Brute force login detection
-- Suspicious PowerShell execution
-- Unauthorized access to sensitive files
+IPs with suspicious failed login attempts
 
-Tools Used: Splunk, MITRE ATT&CK, Regex, Windows logs
+Indicates brute-force activity patterns
+Note: Alert could not be configured due to license limitations in the Splunk Free version. In a production environment, this rule would be saved as a scheduled alert running every 5 minutes with a threshold > 0 results.
+
+Action Plan:
+
+Monitor affected IPs
+
+Escalate repeated login attempts
+
+Block IP if confirmed malicious
+- **SPL Used**:
+```spl
+index=* sourcetype="apache secure" "invalid"
+| rex field=_raw "(?P<client_ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"
+| stats count by client_ip
+| where count > 3
+| sort - count
 
