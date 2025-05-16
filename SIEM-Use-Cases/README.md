@@ -11,6 +11,7 @@ Visual Output:
 IPs with suspicious failed login attempts
 
 Indicates brute-force activity patterns
+
 Note: Alert could not be configured due to license limitations in the Splunk Free version. In a production environment, this rule would be saved as a scheduled alert running every 5 minutes with a threshold > 0 results.
 
 Action Plan:
