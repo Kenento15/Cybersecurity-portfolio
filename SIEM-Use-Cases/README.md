@@ -6,7 +6,7 @@
 
 Visual Output:
 
-![Brute Force IP Results](relative/path/to/Si1.png)
+![Brute Force IP Results](./Si1.png)
 
 IPs with suspicious failed login attempts
 
