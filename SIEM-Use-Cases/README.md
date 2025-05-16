@@ -3,6 +3,7 @@
 **Rule Logic:**  
 - **Condition**: IP with more than 5 failed login attempts in under 1 minute  
 - **Fields Monitored**: `client_ip`, `user`, `_time`
+
 Visual Output:
 
 IPs with suspicious failed login attempts
@@ -24,4 +25,13 @@ index=* sourcetype="apache secure" "invalid"
 | stats count by client_ip
 | where count > 3
 | sort - count
+
+![Brute Force IP Results](relative/path/to/Si1.jpg)
+
+**Skills Demonstrated**
+- SIEM use case development
+- Regex-based field extraction
+- Splunk SPL queries
+- Brute force detection logic
+- Security alert logic and triage planning
 
