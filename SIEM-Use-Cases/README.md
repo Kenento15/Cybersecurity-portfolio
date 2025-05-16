@@ -36,6 +36,6 @@ index=* sourcetype="apache secure" "invalid"
 | where count > 3
 | sort - count
 
-![Brute Force IP Results](relative/path/to/Si1.jpg)
+
 
 
