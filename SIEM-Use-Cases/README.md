@@ -6,6 +6,8 @@
 
 Visual Output:
 
+![Brute Force IP Results](relative/path/to/si1.jpg)
+
 IPs with suspicious failed login attempts
 
 Indicates brute-force activity patterns
@@ -18,6 +20,13 @@ Monitor affected IPs
 Escalate repeated login attempts
 
 Block IP if confirmed malicious
+
+**Skills Demonstrated**
+- SIEM use case development
+- Regex-based field extraction
+- Splunk SPL queries
+- Brute force detection logic
+- Security alert logic and triage planning
 - **SPL Used**:
 ```spl
 index=* sourcetype="apache secure" "invalid"
@@ -28,10 +37,4 @@ index=* sourcetype="apache secure" "invalid"
 
 ![Brute Force IP Results](relative/path/to/Si1.jpg)
 
-**Skills Demonstrated**
-- SIEM use case development
-- Regex-based field extraction
-- Splunk SPL queries
-- Brute force detection logic
-- Security alert logic and triage planning
 
