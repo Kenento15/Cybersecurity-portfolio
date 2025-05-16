@@ -27,6 +27,7 @@ Block IP if confirmed malicious
 - Splunk SPL queries
 - Brute force detection logic
 - Security alert logic and triage planning
+
 **SPL Used**:
 ```spl
 index=* sourcetype="apache secure" "invalid"
